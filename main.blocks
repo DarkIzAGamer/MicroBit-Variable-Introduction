@@ -1,0 +1,31 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id=")#zh6#l[%c/$k:+|tcRQ">PlayerAWins</variable><variable id="YKY;]#Ur)-##cDhr7*!Y">PlayerBWins</variable><variable id="Ox?EcCyga$(#Gx^tg]6@">PlayersTie</variable></variables><comment id="UznF^IrGc!5+i/WMTT7u" x="803" y="507" h="516" w="384">Trenton Miller</comment><block type="pxt-on-start" id="6A682%*+UJ9.zjr)36s(" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="#PdEMw6UPU1[c{afu2xp"><field name="VAR" id=")#zh6#l[%c/$k:+|tcRQ">PlayerAWins</field><value name="VALUE"><shadow type="math_number" id="]Mpli*PN~+*P(tLd2SEZ"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id="BW?zE|XUrTQEZ9Sw;3f@"><field name="VAR" id="YKY;]#Ur)-##cDhr7*!Y">PlayerBWins</field><value name="VALUE"><shadow type="math_number" id="O@rkP0AYDV)NW=1KB=:x"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id=".EpOc0VTezwPN6Jq,F[p"><field name="VAR" id="Ox?EcCyga$(#Gx^tg]6@">PlayersTie</field><value name="VALUE"><shadow type="math_number" id="-DU{}2(u#)!.8T}`tt5Z"><field name="NUM">0</field></shadow></value></block></next></block></next></block></statement></block><block type="device_button_event" id="`D6-,:u%Pg),Ib.XFX4E" x="375" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="variables_change" id="WU9Pf0|O8X7{Nz80I4jC"><field name="VAR" id=")#zh6#l[%c/$k:+|tcRQ">PlayerAWins</field><value name="VALUE"><shadow type="math_number" id="2Z8/$*Fs::^@MD4`2T%{"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="J#jxd96jcJqlYRYK!$tS"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        # # # # # 
+        # . . . #
+        `</field><next><block type="device_clear_display" id="s[GQuqdo1O*cnNqd-IY{"/></next></block></next></block></statement></block><block type="device_button_event" id="9c^r]Jh2N{Kt[wS=6MAd" x="772" y="0"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="variables_change" id="Eb/0OEUp$tQN*3oQ3FXx"><field name="VAR" id="YKY;]#Ur)-##cDhr7*!Y">PlayerBWins</field><value name="VALUE"><shadow type="math_number" id="mj(weFTV;NU[*;{9T#u4"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="fgD{kc:XSNhx7Ltjw4/R"><field name="LEDS">`
+        . # # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # # . .
+        `</field><next><block type="device_clear_display" id="*_0WKkAqFY|ie~Vt)v3N"/></next></block></next></block></statement></block><block type="device_button_event" id="Eycoy(v4^!Ua+5HHVIO/" x="1168" y="0"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="variables_change" id="`o%#pODT@%mnPt`d.vh-"><field name="VAR" id="Ox?EcCyga$(#Gx^tg]6@">PlayersTie</field><value name="VALUE"><shadow type="math_number" id="Vro?i[.8QTT1X%)cmI-C"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="=)myRj[~E]F9F,}}0Q+8"><field name="LEDS">`
+        . # # # . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_clear_display" id="]eaKpRYr@|ah{p@Ku;|q"/></next></block></next></block></statement></block><block type="device_gesture_event" id="-zHWWXn#Le.HGz_zmm,X" x="0" y="446"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_print_message" id="1YEDGfAiCb6pbFPm/$]A"><value name="text"><shadow type="text" id="E~(OJHpt2A=YES}v[nQS"><field name="TEXT">Wins:</field></shadow></value><next><block type="device_pause" id="}+D.y.T;1n_NR/w#E?c8"><value name="pause"><shadow type="timePicker" id=")pKauS=H|]W60-DB%ny%"><field name="ms">1000</field></shadow></value><next><block type="device_show_leds" id="RZ[h#2(aQyV9:}uv%T!b"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        # # # # # 
+        # . . . #
+        `</field><next><block type="device_pause" id="h(h{]f~_du_kV.hkZ*W5"><value name="pause"><shadow type="timePicker" id="+!,T@VV/?|I6RpdV)Y|M"><field name="ms">1000</field></shadow></value><next><block type="device_show_number" id="?=btNrH)Ap7m%Qk|P/:D"><value name="number"><block type="variables_get" id="aiT(rjAL/X-JQ/A%Xo@j"><field name="VAR" id=")#zh6#l[%c/$k:+|tcRQ">PlayerAWins</field></block></value><next><block type="device_pause" id="/]^=g`.v].t_tU~*2q*L"><value name="pause"><shadow type="timePicker" id="S[]M+h5IFr-jHRcX?+-_"><field name="ms">1000</field></shadow></value><next><block type="device_show_leds" id="^;Uf^5[|bHVNnOKL9}F1"><field name="LEDS">`
+        . # # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # # . .
+        `</field><next><block type="device_pause" id="YHdOa*=-%!dL{V6dd+TX"><value name="pause"><shadow type="timePicker" id="Dj1tH6J_A$6}:~;Q]:#q"><field name="ms">1000</field></shadow></value><next><block type="device_show_number" id="EaDy.YR%!3NEP:?=OxTe"><value name="number"><block type="variables_get" id="YR|10Z?IMe^E;Nxv_)4k"><field name="VAR" id="YKY;]#Ur)-##cDhr7*!Y">PlayerBWins</field></block></value><next><block type="device_pause" id="*71s8gj#GM:SpGH=J=4^"><value name="pause"><shadow type="timePicker" id="-o}n0Z(WwsnWB8yXms%E"><field name="ms">1000</field></shadow></value><next><block type="device_print_message" id="o*7fL#|*Uqn~TK#PO#vi"><value name="text"><shadow type="text" id="~S5J8xzkF8=D=$vNkb,G"><field name="TEXT">Ties:</field></shadow></value><next><block type="device_show_number" id="75?Zw`7-^IXL,yP1b~8["><value name="number"><block type="variables_get" id="cdnQ2P3S4usafIWFE_H2"><field name="VAR" id="Ox?EcCyga$(#Gx^tg]6@">PlayersTie</field></block></value><next><block type="device_pause" id="2^4nyhT:/r~2l[aaRIU_"><value name="pause"><shadow type="timePicker" id="6!{g#ZE8ZpQjX}U*-wNM"><field name="ms">1000</field></shadow></value><next><block type="device_clear_display" id="Vt2~!Cj^VWL[0);Q_^Pm"/></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
